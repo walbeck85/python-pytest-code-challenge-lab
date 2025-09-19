@@ -19,9 +19,43 @@ Platforms like Leetcode, Codewars, and HackerRank include test suites for each c
 * Include edge cases and performance tests.
 * Ensure code correctness before submission.
 
-#### Your Task in This Lab
+## Project Setup and Usage
 
-In this lab, you will build your own test suite for a common algorithm problem—the Longest Palindromic Substring—just like platforms like Leetcode would. Instead of solving a challenge with a pre-existing test set, you'll define the test cases yourself, ensuring robust validation before implementing the function (or using a provided solution).
+### Cloning the Repository
+
+To begin, fork this repository to your GitHub account and clone the forked repository to your local machine using the following command:
+
+```bash
+git clone <repository-url>
+```
+
+Replace `<repository-url>` with the URL of your forked repository.
+
+### Installing Dependencies
+
+Navigate to the project directory and install the required dependencies using pipenv:
+
+```bash
+pipenv install
+```
+
+### Activating the Virtual Environment
+
+Activate the virtual environment with:
+
+```bash
+pipenv shell
+```
+
+### Running Tests
+
+To execute the test suite, run the following command inside the activated virtual environment:
+
+```bash
+pytest
+```
+
+This will run all the tests and display the results in the terminal.
 
 ### Scenario:
 
@@ -32,6 +66,15 @@ Before implementing the function, the team follows a Test-Driven Development (TD
 * Consider normal, edge, and failure cases to ensure test robustness.
 * Run your tests and refine them as needed.
 * Implement the function yourself OR use the provided working solution if needed.
+
+## Test Coverage
+
+The test suite includes a variety of test cases to ensure comprehensive validation of the function:
+
+* **Basic Cases:** Tests with common input strings to verify expected outputs.
+* **Edge Cases:** Tests that handle single-character strings, empty strings, very long strings, and inputs with no palindromic substrings longer than one character.
+* **Failure Cases:** Tests designed to check the function's behavior with invalid or unexpected inputs, ensuring robustness and error handling.
+* **Performance Cases:** Tests that evaluate the function's efficiency and performance with large input sizes within the given constraints.
 
 ## Instructions
 ### Set Up
