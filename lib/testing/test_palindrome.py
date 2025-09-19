@@ -1,5 +1,6 @@
 from lib.palindrome import longest_palindromic_substring
 
+# Basic Cases
 def test_basic_case_babad():
     # longest palindrome could be "bab" or "aba"
     result = longest_palindromic_substring("babad")
@@ -8,6 +9,7 @@ def test_basic_case_babad():
 def test_basic_case_cbbd():
     assert longest_palindromic_substring("cbbd") == "bb"
 
+# Edge Cases
 def test_single_character():
     assert longest_palindromic_substring("a") == "a"
 
@@ -21,6 +23,7 @@ def test_full_palindrome():
 def test_empty_string():
     assert longest_palindromic_substring("") == ""
 
+# Failure and Performance Cases
 def test_no_palindromes_beyond_single_chars():
     # In "abc", no palindromes longer than 1 character
     result = longest_palindromic_substring("abc")
